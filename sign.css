@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "lato", arial, sans-serif;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(43, 43, 43, 0.493),
+      rgba(43, 43, 43, 0.493)
+    ),
+    url(img/back-customers.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.form-box {
+  width: 380px;
+  height: 480px;
+  position: relative;
+  background-color: #fff;
+  padding: 5px;
+  margin: 6% auto;
+  overflow: hidden;
+}
+.btn-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px rgba(221, 221, 221, 0.507);
+  border-radius: 30px;
+}
+.toggle-btn {
+  padding: 10px 30px;
+  position: relative;
+  outline: none;
+  border: 0;
+  background: transparent;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background-color: #e67e22;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.social-links {
+  list-style: none;
+
+  text-align: center;
+  margin: 0 auto;
+}
+.social-links li {
+  display: inline-block;
+  width: 30px;
+  margin: 0 20px;
+}
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  color: rgb(138, 138, 138);
+
+  transition: color 0.2s;
+}
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 170%;
+}
+.twit,
+.face,
+.insta {
+  transition: color 0.2s;
+}
+.twit:hover {
+  color: #00aced;
+}
+
+.face:hover {
+  color: #3b5998;
+}
+.insta:hover {
+  color: #c32aa3;
+}
+.input {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+input[type="submit"] {
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 300;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  margin-left: 95px;
+  cursor: pointer;
+}
+input[type="submit"] {
+  background-color: #e67e22;
+  border: #e67e22 solid 1px;
+  color: #fff;
+}
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: #b05d14;
+}
+
+.field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid gray;
+  outline: none;
+  background: transparent;
+}
+.check {
+  margin: 30px 10px 30px 0;
+}
+span {
+  color: #777;
+  font-size: 15px;
+  bottom: 68px;
+  position: absolute;
+}
+/*----nav works---*/
+#login {
+  left: 50px;
+}
+#register {
+  left: 450px;
+}
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 40px;
+}
+
+/* Main navi */
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+  margin-left: 50px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+
+  transition: border-bottom 0.2s;
+}
+.main-nav li a:last-child {
+  margin-right: 50px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+
+.sticky .main-nav {
+  margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 16px 0;
+  color: #555;
+}
+
+.sticky .logo {
+  display: none;
+}
+.sticky .logo-black {
+  display: block;
+}

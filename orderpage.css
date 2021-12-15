@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "lato", arial, sans-serif;
+  box-sizing: border-box;
+}
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+  padding: 30px 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+.item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border-radius: 10px;
+}
+.item img:hover {
+  transform: scale(1.04);
+}
+.item h4 {
+  padding: 4px;
+  text-align: center;
+}
+.item button {
+  padding: 5px 30px;
+  border: none;
+  outline: none;
+  background-color: #e67e22;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 200px;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.2s all;
+}
+.item button:hover {
+  background-color: #af5c14;
+}
+@media screen and (max-width: 1000px) {
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*---nav works--*/
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 40px;
+}
+
+/* Main navi */
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+  margin-left: 50px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+
+  transition: border-bottom 0.2s;
+}
+.main-nav li a:last-child {
+  margin-right: 50px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+
+.sticky .main-nav {
+  margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 16px 0;
+  color: #555;
+}
+
+.sticky .logo {
+  display: none;
+}
+.sticky .logo-black {
+  display: block;
+}

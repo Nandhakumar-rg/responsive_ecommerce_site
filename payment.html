@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resources/css/pay.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendors/css/ionicons.min.css"
+    />
+    <title>omnifood payment</title>
+  </head>
+  <body>
+    <nav class="sticky">
+      <div class="row">
+        <img
+          src="resources/img/logo-white.png"
+          alt="Omnifood logo"
+          class="logo"
+        />
+        <img
+          src="resources/img/logo.png"
+          alt="Omnifood logo"
+          class="logo-black"
+        />
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="order.html">order now</a></li>
+          <li><a href="index.html">How it works</a></li>
+          <li><a href="index.html">Our cities</a></li>
+          <li><a href="signup.html">Sign up</a></li>
+        </ul>
+        <a><i class="ion-navicon-round"></i></a>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="wrapper">
+        <h2>pay here!!</h2>
+        <form method="POST">
+          <h4>account</h4>
+          <div class="input">
+            <div class="input-box">
+              <input
+                type="text"
+                placeholder="full name"
+                required
+                class="name"
+              />
+              <ion-icon name="person-outline"></ion-icon>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="nickname" required class="name" />
+              <ion-icon name="person-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-box">
+              <input
+                type="email"
+                placeholder="email address"
+                required
+                class="name"
+              />
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-box">
+              <h4>date of birth</h4>
+              <input type="text" placeholder="dd" class="dob" />
+              <input type="text" placeholder="mm" class="dob" />
+              <input type="text" placeholder="yyyy" class="dob" />
+            </div>
+            <div class="input-box">
+              <h4>gender</h4>
+              <input type="radio" id="b1" name="gender" checked class="radio" />
+              <label for="b1">male</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
